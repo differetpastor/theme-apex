@@ -108,10 +108,10 @@
         </a>
         <div class="site-description">
           <ul>
-          <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">Home</a></li>
+          <li><a href="/">Blog</a></li>
           {% if pages %}
           {% for page in pages %}
-          <li><a href="/">Blog</a></li>
+          <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">Home</a></li>
           {% endfor %}
           {% endif %}
           </ul>
